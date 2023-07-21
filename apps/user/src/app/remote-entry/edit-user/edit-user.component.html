@@ -1,0 +1,40 @@
+
+<div class="header">
+    <h3 class="title">Edit User</h3>
+    <div><button mat-raised-button color="primary" routerLink="/user">Back</button></div>
+</div>
+<form (ngSubmit)="editUser()">
+    <ul class="form-style-1">
+        <li>
+            <label>Name <span class="required">*</span></label>
+            <input type="text" name="name" [(ngModel)]="form.name" class="field-long" />
+        </li>
+        <li>
+            <label>Username <span class="required">*</span></label>
+            <input type="text" name="username" [(ngModel)]="form.username" class="field-long" />
+        </li>
+        <li>
+            <label>Email <span class="required">*</span></label>
+            <input type="email" name="email" [(ngModel)]="form.email" class="field-long" />
+        </li>
+        <li>
+            <label>Address <span class="required">*</span></label>
+            <textarea name="address" [(ngModel)]="form.address" id="address" class="field-long field-textarea"></textarea>
+        </li>
+        <li>
+            <label>Phone <span class="required">*</span></label>
+            <input type="text" name="phone" [(ngModel)]="form.phone" class="field-long" />
+        </li>
+        <li>
+            <label>website <span class="required">*</span></label>
+            <input type="text" name="website" [(ngModel)]="form.website" class="field-long" />
+        </li>
+        <li>
+            <label>Company <span class="required">*</span></label>
+            <input type="text" name="company" [(ngModel)]="form.company" class="field-long" />
+        </li>
+        <li>
+            <button mat-raised-button color="primary">Save</button>
+        </li>
+    </ul>
+    </form>
